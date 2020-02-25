@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment" android:name="org.d3if4094.praassesment1nisa.HomeFragment"
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_homeFragment_to_persegiFragment" app:destination="@id/persegiFragment"/>
+        <action android:id="@+id/action_homeFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/persegiFragment" android:name="org.d3if4094.praassesment1nisa.PersegiFragment"
+              android:label="fragment_persegi" tools:layout="@layout/fragment_persegi"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if4094.praassesment1nisa.SegitigaFragment"
+              android:label="fragment_segitiga" tools:layout="@layout/fragment_segitiga"/>
+    <fragment android:id="@+id/aboutFragment" android:name="org.d3if4094.praassesment1nisa.AboutFragment"
+              android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+</navigation>

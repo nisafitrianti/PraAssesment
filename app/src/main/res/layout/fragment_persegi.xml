@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".PersegiFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+                android:layout_width="312dp"
+                android:layout_height="47dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/tf_lebar"
+                android:hint="Lebar" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tf_panjang"
+                app:layout_constraintStart_toStartOf="@+id/tf_panjang"
+                app:layout_constraintEnd_toEndOf="@+id/tf_panjang"/>
+        <EditText
+                android:layout_width="312dp"
+                android:layout_height="47dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/tf_panjang" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginTop="44dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.493" android:hint="Panjang"/>
+        <TextView
+                android:text="Keliling = "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" app:layout_constraintStart_toStartOf="@+id/textView5"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" android:textSize="18sp"/>
+        <TextView
+                android:text="Luas = "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" app:layout_constraintStart_toStartOf="@+id/btn_hitung_persegi"
+                android:layout_marginTop="56dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_hitung_persegi" android:textSize="18sp"/>
+        <TextView
+                tools:text="Hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_luas_persegi" android:textSize="18sp" app:layout_constraintStart_toEndOf="@+id/textView5"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"/>
+        <TextView
+                tools:text="Hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_keliling_persegi" android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                app:layout_constraintStart_toEndOf="@+id/textView4" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+        <Button
+                android:text="hitung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_hitung_persegi" app:layout_constraintStart_toStartOf="@+id/tf_lebar"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/tf_lebar"/>
+        <Button
+                android:text="Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_share_persegi" app:layout_constraintStart_toStartOf="@+id/textView4"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
